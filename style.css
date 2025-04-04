@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.algorithm-info {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.algorithm-info h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.algorithm-info p {
+  color: #333;
+  margin-bottom: 10px;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.controls > * {
+  margin: 0 0.5rem;
+}
+
+canvas {
+  /* border: 1px solid #333; */
+  background-color: #fff;
+  border-radius: 10px;
+  /* outline: none; */
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.alert-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 400px;
+}
+
+.alert {
+  background-color: #333;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.alert.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.alert.success {
+  background-color: #61606097;
+}
+
+.closebtn {
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: #ccc;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #fff;
+}
+/* .slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #333;
+} */
+::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: #ccc;
+  margin: 0px 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+::-webkit-slider-thumb {
+  height: 13px;
+  background: #333;
+  width: 70px;
+  cursor: pointer;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sorting Algorithm Visualization</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Algorithm Visualizer</h1>
+    </header>
+    <main>
+      <div>
+        <div class="algorithm-info">
+          <h2>Algorithm Information</h2>
+          <p id="algorithm-description">
+            Select an algorithm from the dropdown menu to view its description.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="controls">
+          <label for="algorithmSelect">Select Algorithm:</label>
+          <select id="algorithmSelect">
+            <option value="default">Choose an Algorithm</option>
+            <option value="bubble">Bubble Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="quicksort">Quick Sort</option>
+            <option value="mergesort">Merge Sort</option>
+            <option value="heapsort">Heap Sort</option>
+          </select>
+
+          <button id="generateButton">Generate</button>
+          <button id="visualizeButton">Visualize</button>
+          <!-- <input type="range" class="slider" /> -->
+        </div>
+
+        <canvas id="canvas"></canvas>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
